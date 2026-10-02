@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100 يوم صداقة</title>
+    <meta
+      name="description"
+      content="هدية صداقة خاصة بمناسبة 100 يوم مع قلبي ❤️"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Marhey:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-layer" id="backgroundLayer" aria-hidden="true"></div>
+
+    <main class="app-shell">
+      <section id="counterScreen" class="screen counter-screen active">
+        <div class="count-card">
+          <div class="count-number-wrap">
+            <span id="countNumber">0</span>
+          </div>
+          <button id="countBtn" class="start-btn">اضغط</button>
+        </div>
+      </section>
+
+      <section id="letterScreen" class="screen letter-screen" aria-live="polite">
+        <div class="title-wrap">
+          <h1>100 يوم صداقة لنا يا قلبي</h1>
+        </div>
+
+        <div class="envelope-scene">
+          <div class="drag-hint">اسحب الملف إلى الأعلى 😍</div>
+
+          <div id="envelope" class="envelope" aria-label="فتح الظرف">
+            <div class="envelope-top"></div>
+            <div class="envelope-front"></div>
+            <div class="envelope-paper"></div>
+
+            <div class="rem-gallery" id="remGallery">
+              <img
+                class="rem-card rem-card-1"
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
+                alt="ريم 1"
+              />
+              <img
+                class="rem-card rem-card-2"
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+                alt="ريم 2"
+              />
+              <img
+                class="rem-card rem-card-3"
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
+                alt="ريم 3"
+              />
+            </div>
+          </div>
+
+          <button id="openLetterBtn" class="open-letter-btn hidden">
+            اضغط على الظرف 😙
+          </button>
+        </div>
+      </section>
+
+      <section id="messageScreen" class="screen message-screen">
+        <div class="message-inner">
+          <div class="character-row">
+            <div class="character-card">
+              <img
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+                alt="ناتسكي"
+              />
+            </div>
+            <div class="character-card">
+              <img
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80"
+                alt="إميليا"
+              />
+            </div>
+          </div>
+
+          <div class="message-box">
+            <p>
+              100 يوم صداقة مع قلبي وروحي وعمري وحياتي مهند، ذول حرفياً أفضل مية يوم
+              بحياتي، كل يوم وكل ساعة وكل دقيقة أقضيها معك، عبارة عن حنان وحب، ولو مرة كنت
+              زعلان أو مضغوط بمجرد كلامي معك يرتاح قلبي وأفرح، وأتمنى نضل مع بعض لحد الموت،
+              وأحبك يا قلبي ❤️
+            </p>
+          </div>
+
+          <div class="audio-box">
+            <iframe
+              id="songFrame"
+              src="https://www.youtube.com/embed/AX6fiTtQqRI?autoplay=0&mute=1&loop=1&playlist=AX6fiTtQqRI"
+              title="أغنية الحب"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
